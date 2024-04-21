@@ -11,7 +11,7 @@ class GymgraphApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const CupertinoApp(
       title: 'Gymgraph',
-      theme: CupertinoThemeData(brightness: Brightness.light),
+      theme: CupertinoThemeData(brightness: Brightness.dark),
       home: MainPage(title: 'Main page'),
     );
   }
