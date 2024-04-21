@@ -1,37 +1,37 @@
 import 'package:flutter/cupertino.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const GymgraphApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class GymgraphApp extends StatelessWidget {
+  const GymgraphApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const CupertinoApp(
-      title: 'Flutter Demo',
+      title: 'Gymgraph',
       theme: CupertinoThemeData(brightness: Brightness.light),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MainPage(title: 'Main page'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class MainPage extends StatefulWidget {
+  const MainPage({super.key, required this.title});
 
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<MainPage> createState() => _MainPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return const CupertinoPageScaffold(
       navigationBar: CupertinoNavigationBar(
-        middle: Text('MyApp'),
+        middle: Text('Gymgraph'),
       ),
       child: Center(
         child: Text('Lorem ipsum'),
